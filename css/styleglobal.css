@@ -1,0 +1,163 @@
+@media (max-width: 768px) {/*pour les écrans < 768px, cible principalement les tablettes*/
+  html {
+    font-size: 18px;/*met la taille de police à 18px*/
+  }
+
+  header {
+    text-align: center;/*centre le contenu*/
+    flex-direction: column;/*aligne les éléments du header en colonne*/
+  }
+
+  nav {
+    width: 100%;/*le menu occupe la totalité de la largeur de la page*/
+  }
+
+  main {
+    flex-direction: column;/*aligne les éléments du main en colonne*/
+  }
+
+  section, blockquote {
+    margin-left: 0;/*enlève toute la marge à gauche*/
+  }
+
+  blockquote {
+    display: flex;/*met l'élément en flexbox*/
+    justify-content: center;/*centre horizontalement*/
+    align-items: center;/*centre verticalement*/
+    margin: 10px;/*ajoute une marge de 10px*/
+  }
+}
+
+@media (max-width: 480px) {/*pour les écrans < 480px, cible principalement les téléphones*/
+  html {
+    font-size: 16px;/*met la taille de police à 16px*/
+  }
+
+  ul li {
+    font-size: 14px;/*met la taille de police à 14px*/
+    padding: 10px;/*ajoute un espacement de 10px*/
+  }
+
+  a:hover {
+    font-size: 20px;/*augmente la taille de la police au survol*/
+  }
+
+  table {
+    width: 100%;/*met le tableau en pleine largeur*/
+    font-size: 12px;/*réduit la taille de la police du tableau à 12px*/
+  }
+
+  blockquote {
+    width: 150px;/*fixe la largeur du blockquote à 150px*/
+  }
+}
+
+html {/*applique les styles à toute la page*/
+  display: flex;/*utilise flexbox pour l'agencement global*/
+  width: 100%;/*utilise toute la largeur de la page*/
+  font-size: 1.8rem; /*met la taille de la police à 1.8rem*/
+  background-image: url('../img/background.jpg'); /*définit le fond d'écran de la page*/
+  background-repeat: no-repeat; /*évite la répétition du fond*/
+  background-size: cover;/*le fond couvre toute la page*/
+  background-position: center; /*centre l'image de fond*/
+  font-family: "Times New Roman", sans-serif; /*choix de la police d'écriture*/
+}
+
+header {/*Header*/
+    background-color: #48ba48;/*fond vert clair*/
+    border-radius: 50px; /*arrondi les bords du header*/
+    padding: 5px 5px 5px 30px; /*ajoute un padding intérieur*/
+    justify-content: center; /*centre le contenu*/
+    display: flex;/*utilise flexbox pour l'agencement du header*/
+    flex-direction: row;/*aligne logo et titre sur une ligne*/
+    border: 15px solid #197119; /*bordure verte*/
+}
+
+img {
+    width: 109px; /*largeur du logo*/
+    height: auto; /*hauteur automatique du logo*/
+}
+
+h1 {
+   color: #FFFFFF; /*couleur du titre en blanc*/
+}
+
+ul.menu {
+  list-style-type: none; /*enlève les puces des listes*/
+  margin: 2rem 0; /*ajoute une marge verticale*/
+  padding: 0; /*enlève le padding par défaut*/
+}
+
+li.menu {
+  border-radius: 2rem; /*arrondit les bords des éléments de la liste*/
+  color: white; /*texte en blanc*/
+  margin-bottom: 1rem; /*ajoute un espacement entre les items*/
+  padding: 1rem 1.5rem; /*ajoute un padding autour du texte*/
+  text-align: center; /*centre le texte*/
+  background-color: #197119; /*fond vert foncé*/
+  margin: 0.5rem 0; /*ajoute un espacement vertical*/
+}
+
+nav a {
+  color: #ffffff; /*texte des liens en blanc*/
+  font-weight: bold; /*mets le texte en gras*/
+  text-decoration: none; /*enlève le soulignement des liens*/
+}
+
+a:hover {
+    color: #48ba48;/*change la couleur des liens au survol*/
+    font-size: 1.5rem;/*augmente la taille de la police au survol*/
+}
+
+main {
+  display: flex; /*utilise flexbox pour l'agencement*/
+  flex-direction: column; /*aligne les éléments en colonne*/
+}
+
+form {
+  padding: 1rem 1rem 1rem 1rem; /*ajoute un padding uniforme autour du formulaire*/
+  color: #FFFFFF; /*couleur du texte en blanc*/
+  text-align: center; /*centre le texte dans le formulaire*/
+}
+
+.file-form {
+  display: flex; /*utilise flexbox pour l'agencement*/
+  flex-direction: column; /*aligne les éléments en colonne*/
+  gap: 10px; /*ajoute un espacement entre les éléments*/
+  align-items: stretch; /*étire les éléments sur toute la largeur*/
+  max-width: 300px; /*largeur maximale du formulaire*/
+  margin: auto; /*centre le formulaire horizontalement*/
+}
+
+label {
+  font-size: 16px; /*taille de la police du label*/
+  color: #333; /*couleur du texte du label*/
+}
+
+button {
+  background-color: #197119; /*fond vert du bouton*/
+  color: white; /*texte en blanc*/
+  padding: 10px; /*ajoute un padding au bouton*/
+  border: none; /*enlève la bordure du bouton*/
+  border-radius: 5px; /*arrondit les bords du bouton*/
+  font-size: 16px; /*taille de la police du bouton*/
+  cursor: pointer; /*ajoute un curseur de pointeur au survol*/
+}
+
+button:hover {
+  background-color: #333; /*change le fond du bouton au survol*/
+}
+
+body {
+  width: 100%; /*le corps de la page utilise toute la largeur disponible*/
+}
+
+section.vueglob {
+  background-color: #8df48d; /*fond vert clair pour la section*/
+  border-radius: 50px; /*arrondit les bords de la section*/
+  padding: 1rem; /*ajoute un padding à la section*/
+}
+
+ul {
+  list-style-type: none; /*enlève les puces des listes*/
+}

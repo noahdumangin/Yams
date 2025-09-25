@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yam's</title>
+    <link rel="stylesheet" href="css/styletour.css">
+    <script src="javascript/tourpartour.js"></script>
+</head>
+<body>
+    <header>
+        <img src="./img/logo_de.png"
+        alt="Le logo"/>
+        <h2>Récapitulatif de votre partie de Yam's tour par tour</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="regles_du_jeu.html">Règles du jeu</a></li>
+            <li><a href="vue_globale.html">Vue globale de la partie</a></li>
+            <li><a href="vue_tour_par_tour.html">Vue tour par tour de la partie</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form class="input-form" onsubmit="return false;">
+            <label for="gameId">Entrez l'identifiant de la partie :</label>
+            <input type="text" id="game-id" name="gameId" placeholder="Ex : qnw5c476vg" required>
+            <button id="fetch-game" type="button">Valider</button>
+        </form> 
+        <section class="principal">
+            <aside>
+                <button id="prev-round">
+                    <img src="./img/flechegauche.png" alt="flechegauche" width="30" height="20">
+                </button>
+            </aside>
+            <section class="jeu">
+                
+            </section>
+            <aside>
+                <button id="next-round">
+                    <img src="./img/flechedroite.png" alt="flechedroite" width="30" height="20">
+                </button>
+            </aside>
+        </section>
+        <section class="résultats">
+
+        </section>
+    </main>
+</body>
+</html>

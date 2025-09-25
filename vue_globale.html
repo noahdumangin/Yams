@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yam's</title>
+    <link rel="stylesheet" href="css/styleglobal.css">
+    <script src="javascript/vueglobale.js"></script>
+</head>
+<body>
+    <header class="logo">
+        <img src="./img/logo_de.png"
+        alt="Le logo"/>
+        <h2>Récapitulatif de votre partie de Yam's</h2>
+    </header>
+    <main>
+        <nav>
+            <ul class="menu">
+                <li class="menu"><a href="regles_du_jeu.html">Règles du jeu</a></li>
+                <li class="menu"><a href="vue_globale.html">Vue globale</a></li>
+                <li class="menu"><a href="vue_tour_par_tour.html">Vue tour par tour</a></li>
+            </ul>
+        </nav>
+        <section class="vueglob">
+        <form class="input-form" onsubmit="return false;">
+            <label for="gameId">Entrez l'identifiant de la partie :</label>
+            <input type="text" id="game-id" name="gameId" placeholder="Ex : qnw5c476vg" required>
+            <button id="fetch-game" type="button">Valider</button>
+        </form>        
+        <section>
+
+        </section>
+        </section>
+    </main>
+</body>
+</html>

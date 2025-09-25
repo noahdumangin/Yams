@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yam's</title>
+    <link rel="stylesheet" href="css/stylereglesdujeu.css">
+    <link rel="icon" href="./img/logo_de.ico">
+</head>
+<body>
+    <header class="logo">
+        <img src="./img/logo_de.png"
+        alt="Le logo"/>
+        <h1>Récapitulatif de votre partie de Yam's</h1 >
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="regles_du_jeu.html">Règles du jeu</a></li>
+                <li><a href="vue_globale.html">Vue globale</a></li>
+                <li><a href="vue_tour_par_tour.html">Vue tour par tour</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h2>Règles du jeu</h2>
+            <p>Deux joueurs, partageant un même ordinateur et ayant saisi leurs pseudos, jouent à un jeu de dés comportant 13 tours. À chaque tour, un joueur choisit un des 13 défis disponibles, chacun devenant inaccessible pour les tours suivants.</p>
+            <br/>
+            <p class="defis">Les défis se divisent en deux catégories :</p>
+            <br/>
+            <p class="challenge">Challenges mineurs:</p>
+            <br/>
+            <table>
+                <thead class="mineurs">
+                    <tr>
+                        <th>Challenges</th> <th>Objectif</th> <th>Nombre de points</th>
+                    </tr>
+                </thead>
+                <tbody class="mineurs">
+                    <tr>
+                        <td>Nombre de 1</td> <td>Obtenir le maximum de 1</td> <td>Somme des dés ayant obtenu 1</td>
+                    </tr>
+                    <tr>
+                        <td>Nombre de 2</td> <td>Obtenir le maximum de 2</td> <td>Somme des dés ayant obtenu 2</td>
+                    </tr>
+                    <tr>
+                        <td>Nombre de 3</td> <td>Obtenir le maximum de 3</td> <td>Somme des dés ayant obtenu 3</td>
+                    </tr>
+                    <tr>
+                        <td>Nombre de 4</td> <td>Obtenir le maximum de 4</td> <td>Somme des dés ayant obtenu 4</td>
+                    </tr>
+                    <tr>
+                        <td>Nombre de 5</td> <td>Obtenir le maximum de 5</td> <td>Somme des dés ayant obtenu 5</td>
+                    </tr>
+                    <tr>
+                        <td>Nombre de 6</td> <td>Obtenir le maximum de 6</td> <td>Somme des dés ayant obtenu 6</td>
+                    </tr>
+                <tbody>
+            </table>
+            <br/>
+            <article>
+                <blockquote><p>Bonus : Si la somme de la partie mineure atteint 63 le joueur reçoit un bonus de 35 points.</p></blockquote>
+            </article>
+            <br/>
+            <p class="challenge">Challenges majeurs:</p>
+            <br/>
+            <table>
+                <thead class="majeurs">
+                    <tr>
+                        <th>Challenge</th> <th>Objectif</th> <th>Nombre de points</th>
+                    </tr>
+                </thead>
+                <tbody class="majeurs">
+                    <tr>
+                        <td>Brelan</td> <td>Obtenir 3 dés de même valeur</td> <td>Somme des 3 dés identiques</td>
+                    </tr>
+                    <tr>
+                        <td>Carré</td> <td>Obtenir 4 dés de même valeur</td> <td>Somme des 4 dés identiques</td>
+                    </tr>
+                    <tr>
+                        <td>Full</td> <td>Obtenir 3 dés de même valeur + 2 dés de même valeur</td> <td>25 points</td>
+                    </tr>
+                    <tr>
+                        <td>Petite suite</td> <td>Obtenir 1-2-3-4 ou 2-3-4-5 ou 3-4-5-6</td> <td>30 points</td>
+                    </tr>
+                    <tr>
+                        <td>Grande suite</td> <td>Obtenir 1-2-3-4-5 ou 2-3-4-5-6</td> <td>40 points</td>
+                    </tr>
+                    <tr>
+                        <td>Yam's</td> <td>Obtenir 5 dés de même valeur</td> <td>50 points</td>
+                    </tr>
+                    <tr>
+                        <td>Chance</td> <td>Obtenir le maximum de points</td> <td>Total des dés obtenus</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br/>
+            <p class="defis">Un tour se déroule de la façon suivante:</p>
+            <br/>
+            <p>Le joueur peut effectuer jusqu'à 3 lancés des 5 dés</br></br>
+                1er lancé : </br>le joueur lance les 5 dés</br>
+                Le joueur indique les dés à garder, les autres vont être relancés,</br></br>
+                2ème lancé (facultatif) </br>le joueur relance les dés non gardés
+                Le joueur indique les dés à garder, les autres vont être relancés,
+                </br></br>3ème lancé (facultatif) </br>le joueur relance les dés non gardés
+                </br></br>Le joueur indique son choix parmi les challenges disponibles et se voit affecter le nombre de points
+                correspondants après, ou 0 si les dés obtenus ne remplissent pas les conditions du challenge choisi.</p>       
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,148 @@
+@media (max-width: 768px) {/*pour les écrans < 768px, principalement les tablettes*/
+  html {
+    font-size: 18px;/*réduit la taille de la police à 18px*/
+  }
+
+  header {
+    text-align: center;/*centre le contenu du header*/
+    flex-direction: column;/*aligne le contenu du header en colonne*/
+  }
+
+  nav {
+    width: 100%;/*le menu occupe la largeur totale de la page*/
+  }
+
+  main {
+    flex-direction: column;/*aligne les éléments du main en colonne*/
+  }
+
+  section, blockquote {
+    margin-left: 0;/*supprime la marge à gauche des sections et blockquote*/
+  }
+
+  blockquote {
+    display: flex;/*utilise flexbox pour l'agencement*/
+    justify-content: center;/*centre horizontalement le contenu*/
+    align-items: center;/*centre verticalement le contenu*/
+    margin: 10px;/*ajoute une marge de 10px autour du blockquote*/
+  }
+}
+
+@media (max-width: 480px) {/*pour les écrans < 480px, principalement les téléphones*/
+  html {
+    font-size: 16px;/*réduit la taille de la police à 16px*/
+  }
+
+  ul li {
+    font-size: 14px;/*réduit la taille de la police des items de la liste à 14px*/
+    padding: 10px;/*ajoute un padding de 10px autour des éléments de liste*/
+  }
+
+  a:hover {
+    font-size: 20px;/*augmente la taille de la police des liens au survol*/
+  }
+
+  table {
+    width: 100%;/*le tableau occupe la largeur totale de la page*/
+    font-size: 12px;/*réduit la taille de la police du tableau à 12px*/
+  }
+
+  blockquote {
+    width: 150px;/*fixe la largeur du blockquote à 150px*/
+  }
+}
+
+html { /*applique les styles à toute la page web*/
+  display: flex;/*utilise flexbox pour l'agencement global*/
+  font-size: 1.8rem; /*met la taille de la police à 1.8rem*/
+  background-image: url('../img/background.jpg'); /*définit l'image de fond*/
+  background-repeat: no-repeat; /*l'image ne se répète pas*/
+  background-size: cover;/*le fond couvre toute la page*/
+  background-position: center; /*centre l'image de fond*/
+  font-family: "Times New Roman", sans-serif; /*choisit la police de caractères*/
+}
+
+header {
+  display: flex; /*utilise flexbox pour l'agencement du header*/
+  justify-content: center; /*centre le contenu horizontalement*/
+  align-items: center; /*centre le contenu verticalement*/
+  flex-direction: row; /*garde le logo et le titre sur une seule ligne*/
+  background-color: #48ba48; /*fond vert clair du header*/
+  border-radius: 50px; /*arrondit les bords du header*/
+  padding: 5px 5px 5px 30px; /*ajoute un padding intérieur*/
+  border: 15px solid #197119; /*bordure verte foncée*/
+}
+
+img {
+    width: 109px; /*largeur du logo à 109px*/
+    height: auto; /*hauteur automatique pour le logo*/
+}
+
+h1 {
+   color: #FFFFFF; /*couleur du titre en blanc*/
+}
+
+ul {
+  list-style-type: none; /*enlève les puces des listes*/
+  margin: 2rem 0; /*ajoute une marge autour de la liste*/
+  padding: 0; /*enlève le padding par défaut*/
+}
+
+li {
+  border-radius: 2rem; /*arrondit les bords des éléments de la liste*/
+  color: white; /*texte des éléments en blanc*/
+  margin-bottom: 1rem; /*ajoute un espace entre les items*/
+  padding: 1rem 1.5rem; /*ajoute de l'espace autour du texte*/
+  text-align: center; /*centre le texte dans chaque item*/
+  background-color: #197119; /*fond vert foncé pour les items*/
+  margin: 0.5rem 0; /*ajoute un espacement vertical entre les items*/
+}
+
+main {
+    display: flex; /*utilise flexbox pour l'agencement*/
+    flex-direction: column; /*aligne les éléments du main en colonne*/
+    background-color: #8df48d; /*fond vert clair*/
+    border-radius: 50px; /*arrondit les bords du main*/
+    padding: 1rem; /*ajoute un padding intérieur de 1rem*/
+    width: 100%; /*utilise toute la largeur disponible*/
+}
+
+nav a {
+  color: #ffffff; /*texte des liens de navigation en blanc*/
+  font-weight: bold; /*mets le texte en gras*/
+  text-decoration: none; /*enlève le soulignement des liens*/
+}
+
+a:hover {
+    color: #48ba48; /*change la couleur du texte au survol en vert clair*/
+    font-size: 1.5rem; /*augmente la taille de la police des liens au survol*/
+}
+
+section.principal {
+  display: flex; /*utilise flexbox pour l'agencement*/
+  flex-direction: row; /*garde les éléments sur une seule ligne*/
+  justify-content: space-around; /*distribue l'espace également entre les éléments*/
+  width: 100%; /*utilise toute la largeur disponible*/
+}
+
+button.valider {
+  background-color: #197119; /*fond vert foncé du bouton*/
+  color: white; /*texte du bouton en blanc*/
+  padding: 10px; /*ajoute un padding de 10px au bouton*/
+  border: none; /*enlève la bordure du bouton*/
+  border-radius: 5px; /*arrondit les bords du bouton*/
+  font-size: 16px; /*taille de la police du bouton*/
+  cursor: pointer; /*ajoute un curseur de pointeur au survol*/
+}
+
+button.valider:hover {
+  background-color: #333; /*change la couleur de fond du bouton au survol*/
+}
+
+body {
+  width: 100%; /*utilise toute la largeur disponible pour le body*/
+}
+
+form {
+  padding: 1rem; /*ajoute un padding de 1rem autour du formulaire*/
+}

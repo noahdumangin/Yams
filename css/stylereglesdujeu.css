@@ -1,0 +1,198 @@
+@media (max-width: 768px) {/*pour les écrans < 768px, cible principalement les tablettes*/
+  html {
+    font-size: 18px;/*met la taille de police à 18px*/
+  }
+
+  header {
+    text-align: center;/*centre le contenu*/
+  }
+
+  nav {
+    width: 100%;/*le menu occupe la totalité de la largeur de la page*/
+  }
+
+  main {
+    flex-direction: column;/*aligne en colonne les éléments du main*/
+  }
+
+  section, blockquote {
+    margin-left: 0;/*enlève toute la marge à gauche*/
+  }
+
+  blockquote {
+    display: flex;/*met l'élément en flexbox*/
+    justify-content: center;/*centre horizontalement*/
+    align-items: center;/*centre verticalement*/
+    margin: 10px;/*met une marge de 10px*/
+  }
+}
+
+@media (max-width: 480px) {/*pour les écrans < 480px, cible principalement les téléphones*/
+  html {
+    font-size: 16px;/*met la taille de police à 16px*/
+  }
+
+  ul li {
+    font-size: 14px;/*met la taille de police à 14px*/
+    padding: 10px;/*ajoute un espacement de 10px*/
+  }
+
+  a:hover {
+    font-size: 20px;/*met la taille de police à 20px au survol*/
+  }
+
+  table {
+    width: 100%;/*met le tableau en pleine largeur*/
+    font-size: 12px;/*met la taille de police du tableau à 12px*/
+  }
+
+  blockquote {
+    width: 150px;/*met la largeur à 150px*/
+  }
+}
+
+html {/*Global styles*/
+    font-size: 1.8rem;/*met la taille de police par défaut à 1,8rem*/
+    background-image: url('../img/background.jpg');/*ajoute l'image de fond*/
+    background-repeat: no-repeat;/*permet de ne pas avoir de répétition du fond*/
+    background-size: cover;/*le fond couvre la page*/
+    background-position: center;/*centre du fond*/
+    font-family:"Times New Roman", sans-serif;/*choix de la police d'écriture*/
+}
+
+header {/*Header*/
+    background-color: #48ba48;/*met un fond vert*/
+    border-radius: 50px;/*arrondi les bords*/
+    padding: 5px 5px 5px 30px;/*ajoute un padding*/
+    justify-content: center;/*centre le contenu*/
+    display : flex;/*met l'élément en flexbox*/
+    flex-direction: row;/*aligne les éléments en lignes*/
+    border: 15px solid #197119;/*ajoute une bordure verte*/
+}
+
+img {
+    width: 109px;/*largeur du logo*/
+    height: auto;/*hauteur du auto*/
+}
+
+h1 {
+   color: #FFFFFF;/*met le texte en blanc*/
+}
+
+ul {
+  list-style-type: none;/*enlève les puces de la liste*/
+  padding: 0;/*enlève tout le padding*/
+  display: flex;/*met l'élément en flexbox*/
+  flex-direction: column;/*aligne les éléments en colonne*/
+  gap: 1rem;/*espace les éléments*/
+  width:100%;/*fait occuper toute la largeur de la page web au site*/
+}
+
+li {
+  border-radius: 2rem;/*arrondi les bords*/
+  color: white;/*met le texte en blanc*/
+  padding: 1rem 1.5rem;/*ajoute un padding*/
+  text-align: center;/*centre le texte */
+  background-color: #197119;/*met le fond en vert*/
+}
+
+main {
+    display: flex;/*met l'élément en flexbox*/
+    flex-direction: column;/*aligne en colonne*/
+}
+
+nav {
+  display: flex;/*met l'élément en flexbox*/
+  justify-content: space-between;/*espace les liens*/
+  align-items: center;/*centre verticalement*/
+  box-sizing: border-box;/*inclut les bordures et le padding*/
+}
+
+nav a {
+  color: #ffffff;/*met le texte en blanc*/
+  font-weight: bold;/*met le texte en gras*/
+  text-decoration: none;/*enleve le soulignement*/
+  padding: 10px;/*ajoute un padding*/
+}
+/*quand le bouton du menu est survolé*/
+a:hover {
+    color: #48ba48;/*changement de couleur au survol*/
+    font-size: 1.5rem;/*augmentation taille de police au survol*/
+}
+
+section {
+  display: flex;/*met l'élément en flexbox*/
+  flex-direction: column;/*aligne en colonne*/
+  justify-content: center;/*centre verticalement*/
+  align-items: center;/*centre horizontalement*/
+  background-color: #48ba48;/*met le fond vert clair*/
+  margin-top: 1rem;/*met une marge en haut de 1rem*/
+  margin-bottom: 1rem;/*met une marge en bas de 1rem*/
+  padding: 0 0.5rem 1.5rem 1.5rem;/*ajoute un padding*/
+  color: #FFFFFF;/*met le texte en blanc*/
+  border-radius: 2.5rem;/*arrondi les bords*/
+}
+
+h2 {
+    color: #197119;/*met le texte en verte foncée*/
+    text-align: center;/*centre le texte*/
+}
+
+p.challenge {/*titre des challenges*/
+    text-decoration: underline;/*texte souligné*/
+    font-weight: bold;/*texte en gras*/
+    text-align: center;/*texte centré*/
+}
+
+p.defis {
+    color: #197119;/*couleur du texte verte foncée*/
+    font-size: 2rem;/*met la taille de police à 2rem*/
+}
+
+/*tableau*/
+table {
+    width: 100%;/*tableau en pleine largeur*/
+    margin: 1rem auto;/*marge automatique*/
+    border-collapse: collapse;/*fusion des bordures*/
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);/*ombre le tableau*/
+}
+
+/*En-têtes du tableau*/
+th {
+    background-color: #197119;/*fond vert foncé*/
+    color: white;/*texte blanc*/
+    padding: 0.5rem;/*ajoute un padding*/
+    text-align: left;/*met le texte à gauche*/
+    font-weight: bold;/*met le texte en gras*/
+}
+
+/*cellules du tableau*/
+td {
+    padding: 0.5rem;/*ajoute un padding*/
+    text-align: left;/*met le texte à gauche*/
+}
+
+/*bordures du tableau*/
+td, th {
+    border: 0.05rem solid #FFFFFF;/*met des bordures blanches*/
+}
+
+/*blockquote*/
+blockquote {
+  display: flex;/*met l'élément en flexbox*/
+  justify-content: center;/*centre horizontalement*/
+  align-items: center;/*centre verticalement*/
+  flex-direction: column;/*met les items en colonnes*/
+  width: 300px;/*fixe la largeur à 300px*/
+  padding: 1rem;/*ajoute un padding*/
+  background-image: url('../img/post-it.png');/*ajoute un fond image*/
+  background-repeat: no-repeat;/*enleve la répétition du fond*/
+  background-position: center;/*centre l'image*/
+  font-family: Arial, sans-serif;/*change la police d'écriture juste pour blocquote*/
+  color: black;/*met le texte noir*/
+  font-style: italic;/*met le texte en italique*/
+}
+
+body {
+  width: 100%;/*les itemes utilisent toute la largeur de la page*/
+}
