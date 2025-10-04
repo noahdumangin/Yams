@@ -2,7 +2,7 @@
 
 Ce projet propose un **solveur de Sudoku écrit en assembleur MIPS32**. Le programme lit une grille de Sudoku depuis un fichier, la convertit en nombres, résout le puzzle et affiche la solution à l’écran de manière claire et lisible.
 
-Malheureusement le site pour fournir le code de partie est inaccessible car il était fourni par les professeurs.
+Malheureusement le site pour fournir le code de partie est inaccessible car il était fourni par les professeurs donc il est impossible d'afficher les résultats sur le site web.
 
 
 ## Table des matières
