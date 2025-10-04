@@ -2,7 +2,6 @@
 
 Ce projet propose un **solveur de Sudoku écrit en assembleur MIPS32**. Le programme lit une grille de Sudoku depuis un fichier, la convertit en nombres, résout le puzzle et affiche la solution à l’écran de manière claire et lisible.
 
----
 
 ## Table des matières
 - [Prérequis](#prérequis)  
@@ -12,13 +11,11 @@ Ce projet propose un **solveur de Sudoku écrit en assembleur MIPS32**. Le progr
 - [Exécution](#exécution)  
 - [Exemple de sortie](#exemple-de-sortie)  
 
----
 
 ## Prérequis
 - Un **émulateur MIPS** (par exemple MARS ou SPIM).  
 - Un **fichier texte** contenant une grille de Sudoku (`sudoku.txt`) au format **81 caractères**, où `0` représente une case vide.
 
----
 
 ## Structure du projet
 
@@ -44,7 +41,6 @@ Le programme est organisé en plusieurs fonctions, chacune avec un rôle précis
 3. **Résolution** : `solve_sudoku` remplit les cases vides de manière récursive en respectant les règles du Sudoku.  
 4. **Affichage** : `displayGrille` ou `displaysudoku` affiche la grille avec des séparateurs `|` et `-` pour délimiter les sous-grilles.
 
----
 
 ## Fonctions principales
 
@@ -59,7 +55,6 @@ Le programme est organisé en plusieurs fonctions, chacune avec un rôle précis
 | `zeroToSpace` | Remplace les `0` par des espaces pour un affichage plus clair. |
 | `addPipe / addDash` | Ajoute des séparateurs visuels dans l’affichage. |
 
----
 
 ## Exécution
 
@@ -68,7 +63,6 @@ Le programme est organisé en plusieurs fonctions, chacune avec un rôle précis
 3. Exécuter le programme (`main`).  
 4. La grille résolue s’affiche automatiquement dans la console.
 
----
 
 ## Exemple de sortie
 
