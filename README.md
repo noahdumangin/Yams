@@ -31,6 +31,19 @@ Clic droit sur le fichier regles_du_jeu.html puis ouvrir avec et choisissez votr
 
 ## Images
 
+![affichage des règles du jeu](Images/Regles.png)
+<br>
+<p>Fenêtre des règles du jeu</p>
+<br><br><br>
+
+![affichage des résultats globalement](Images/VueGlobale.png)
+<p>Fenêtre d'affichage des résultats global</p>
+<br><br><br>
+
+![affichage des résultats tour par tour](Images/Vuetour.png)
+<p>Fenêtre d'affichage des résultats tour par tour</p>
+<br><br><br>
+
 
 # Le code
 
