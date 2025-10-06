@@ -6,34 +6,24 @@ Malheureusement le site pour fournir le code de partie est inaccessible car il �
 
 
 ## Table des matières
-- [Prérequis](#prérequis)  
-- [Structure du projet](#structure-du-projet)  
-- [Fonctionnement](#fonctionnement)  
-- [Fonctions principales](#fonctions-principales)  
-- [Exécution](#exécution)  
-- [Exemple de sortie](#exemple-de-sortie)  
+- [Le site web](#Le-site-web)
+  - [Utilisation](#Utilisation)
+- [Le code](#Le-code)  
+  - [Executer du code](#Executer-le-code)
+
+# Le site web
+
+## Utilisation
 
 
-## Structure du projet
+# Le code
 
-### Code
-- **filename** : chemin vers le fichier contenant la grille.  
+## Executer le code 
+Sur **Linux**, compilez et exécutez le programme avec les commandes suivantes :
 
-### Site web
-Le programme est organisé en plusieurs fonctions, chacune avec un rôle précis :  
-- Lecture et transformation de la grille.
-  
+```bash
+# Compilation du programme
+mcs -out:yam.exe main.cs
 
-## Fonctionnement
-
-1. **Lecture du fichier** : `parseValues` lit le fichier caractère par caractère et remplit la grille.  
-
-
-## Exécution
-
-Sur Linux exécutez le code C# avec la commande 
-
-
-## Exemple de sortie
-
-
+# Exécution du programme
+mono yam.exe
