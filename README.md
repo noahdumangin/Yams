@@ -49,7 +49,7 @@ Sur **Linux**, compilez et exécutez le programme avec les commandes suivantes :
 
 ```bash
 # Compilation du programme
-mcs -out:yam.exe main.cs
+mcs yams.cs
 
 # Exécution du programme
 mono yam.exe
