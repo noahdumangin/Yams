@@ -1,4 +1,4 @@
-# Yam's
+# Yam's 🎲
 
 Ce projet est constitué de deux parties, **le code** qui permet de jouer au jeu de yam's et **le site web** qui permet d'afficher les résultats du fichier json remplis avec le code. 
 
@@ -6,17 +6,63 @@ Malheureusement le site pour fournir le code de partie est inaccessible car il �
 
 
 ## Table des matières
-- [Le site web](#Le-site-web)
-  - [Présentation](#Présentation-du-site-web)
-  - [Utilisation](#Utilisation)
-  - [Images](#Images)
-- [Le code](#Le-code)
-  - [Présentation](#Présentation-du-site-web)
-  - [Executer du code](#Executer-le-code)
-  - [Images](#Images)
+- [Le code](#le-code)
+  - [Technologies utilisées](#technologies-utilisées)
+  - [Executer du code](#executer-le-code)
+  - [Présentation](#présentation-du-site-web)
+  - [Images](#images)
+- [Le site web](#le-site-web)
+  - [Technologies utilisées](#technologies-utilisées)
+  - [Lancement du site web](#lancement-du-site-web)
+  - [Présentation](#présentation-du-site-web)
+  - [Utilisation](#utilisation)
+  - [Images](#images)
+
+# Le code
+
+## Technologies utilisées
+
+- **Langage** : C#
+- **Framework** : Mono (Linux)
+- **Stockage** : Fichier JSON
+
+  
+## Executer le code 
+Sur **Linux**, compilez et exécutez le programme avec les commandes suivantes :
+
+```bash
+# Compilation du programme
+mcs yams.cs
+
+# Exécution du programme
+mono yam.exe
+```
+
+## Présentation du code
+
+Le programme est organisé pour gérer une partie de Yams entre deux joueurs. La fonction principale, Main, s'occupe de dérouler le jeu, comme gérer les tours des joueurs et afficher les scores finaux. Des fonctions comme PlayTurn gèrent ce qu'un joueur fait pendant son tour : lancer les dés, choisir une catégorie pour marquer des points, et calculer son score. Une autre fonctions comme CalculateScore, permet de vérifier combien de points un joueur gagne pour une catégorie donnée. Une partie du programme permet aussi d’enregistrer les détails de la partie dans un fichier JSON.
+
+Le programme utilise des tableaux pour suivre les scores des joueurs. Par exemple, un tableau d'entiers garde les points obtenus dans chaque catégorie. Il y a aussi un tableau de booléens pour vérifier si une catégorie a déjà été utilisée par un joueur. Les informations d’une manche (résultats des lancers, catégorie choisie, score) sont stockées dans des listes de dictionnaires. Ces structures permettent de garder les données bien organisées tout au long de la partie.
+
+On vérifie les défis (comme les suites ou les brelans) dans la fonction CalculateScore. Pour des combinaisons comme le brelan ou le carré, le programme compte combien de fois chaque valeur apparaît dans les dés. Un autre algorithme calcule si les scores des catégories mineures atteignent 63 points, ce qui ajoute un bonus. Ces algorithmes suivent les règles du Yams tout en étant clairs et efficaces.
+
+## Images
+
 
 # Le site web
 
+## Technologies utilisées
+
+- **HTML/CSS** : pages statiques avec Flexbox
+- **JavaScript** : affichage dynamique des résultats
+- **JSON** : source des données (non accessible actuellement)
+
+## Lancement du site web
+1. Clic droit sur regles_du_jeu.html
+2. Ouvrir avec votre navigateur de prédilection
+
+>Les autres pages nécessitent un identifiant de partie et un serveur actif pour fonctionner.
+  
 ## Présentation du site web 
 
 La page html regles_du_jeu.html est axée sur la présentation des règles du jeu elle est reliée à un fichier css stylereglesdujeu.css qui est organisée avec des flexbox. La page html contient donc le titre avec le logo, ensuite, le menu de navigation où on peut accéder aux autres pages qui affiche votre partie de yam’s. Enfin on a la partie principale de la page web, là où l’on peut lire les règles.
@@ -43,26 +89,3 @@ Clic droit sur le fichier regles_du_jeu.html puis ouvrir avec et choisissez votr
 ![affichage des résultats tour par tour](Images/Vuetour.png)
 <p>Fenêtre d'affichage des résultats tour par tour</p>
 <br><br><br>
-
-
-# Le code
-
-## Présentation du code
-
-Le programme est organisé pour gérer une partie de Yams entre deux joueurs. La fonction principale, Main, s'occupe de dérouler le jeu, comme gérer les tours des joueurs et afficher les scores finaux. Des fonctions comme PlayTurn gèrent ce qu'un joueur fait pendant son tour : lancer les dés, choisir une catégorie pour marquer des points, et calculer son score. Une autre fonctions comme CalculateScore, permet de vérifier combien de points un joueur gagne pour une catégorie donnée. Une partie du programme permet aussi d’enregistrer les détails de la partie dans un fichier JSON.
-
-Le programme utilise des tableaux pour suivre les scores des joueurs. Par exemple, un tableau d'entiers garde les points obtenus dans chaque catégorie. Il y a aussi un tableau de booléens pour vérifier si une catégorie a déjà été utilisée par un joueur. Les informations d’une manche (résultats des lancers, catégorie choisie, score) sont stockées dans des listes de dictionnaires. Ces structures permettent de garder les données bien organisées tout au long de la partie.
-
-On vérifie les défis (comme les suites ou les brelans) dans la fonction CalculateScore. Pour des combinaisons comme le brelan ou le carré, le programme compte combien de fois chaque valeur apparaît dans les dés. Un autre algorithme calcule si les scores des catégories mineures atteignent 63 points, ce qui ajoute un bonus. Ces algorithmes suivent les règles du Yams tout en étant clairs et efficaces.
-
-## Images
-
-## Executer le code 
-Sur **Linux**, compilez et exécutez le programme avec les commandes suivantes :
-
-```bash
-# Compilation du programme
-mcs yams.cs
-
-# Exécution du programme
-mono yam.exe
